@@ -1,0 +1,101 @@
+const {onRequest} = require("firebase-functions/v2/https");
+const logger = require("firebase-functions/logger");
+
+const {initializeApp} = require("firebase-admin/app");
+const {getFirestore} = require("firebase-admin/firestore");
+
+initializeApp();
+
+const db = getFirestore();
+
+exports.findAllServervations = onRequest({
+  minInstances: 1,
+  maxInstances: 10,
+}, async (req, res) => {
+  const reservationRef = db.collection("reservation");
+  const snapShot = await reservationRef.get();
+  snapShot.forEach((doc) => {
+    console.log(doc.id, "=>", doc.data());
+  });
+
+  res.json({result: "data retrieved"});
+  logger.log("data retrieved");
+});
+
+exports.findReservationByCode = onRequest({
+  minInstances: 1,
+  maxInstances: 10,
+}, async (req, res) => {
+  const code = parseInt(req.query.code);
+  // console.log(code);
+  const reservationRef = db.collection("reservation");
+  const snapShot = await reservationRef.where("checkInCode", "==", code).get();
+  if (snapShot.empty){
+      // console.log('No matching documents');
+      return res.json({result: "No matching documents"});
+  }
+
+  snapShot.forEach(doc => {
+    console.log(doc.id, "=>", doc.data());
+  });
+
+  return res.json({result: "data found"});
+});
+
+exports.findReservationById = onRequest({
+  minInstances: 1,
+  maxInstances: 10,
+}, async (req, res) => {
+  const reservationRef = db.collection("reservation").doc("uaaT1ES1rTvF05L3MCVT");
+  const doc = await reservationRef.get();
+  if (!doc.exists) {
+      console.log("No such document!");
+  } else {
+      console.log("Document data:", doc.data());
+  }
+  
+  // send back a message that we've successfully written the messsage
+  res.json({result: `Reservation with ID: ${doc.id} found.`});
+});
+
+exports.addReservation = onRequest({
+  minInstances: 1,
+  maxInstances: 10,
+  }, async (req, res) => {
+  console.log(req);
+  const writeResult = await db
+    .collection("reservation")
+    .add({
+    driverId: "driverIdHere",
+    deviceId: "deviceIdHere",
+    parkingLotId: "parkingLotId",
+    slotCount: 1,
+    hoursReserved: 1,
+    checkInCode: 12345,
+    bill: 400.00,
+    paymentStatus: "PAID",
+    date: Date.now(),
+  });
+  
+  // send back a message that we've successfully written the messsage
+  res.json({result: `Data with ID: ${writeResult.id} added.`});
+});
+
+exports.addDevice = onRequest({
+  minInstances: 1,
+  maxInstances: 10,
+}, async (req, res) => {
+  const deviceRef = db.collection("device");
+  const writeResult = await deviceRef.add({
+    parkingLotId: "parkingLotId",
+    status: "ONLINE",
+    gateStatus: false,
+    checkInCodes: [12345, 12346],
+  });
+
+  if (writeResult.empty){
+    return res.json({result: "Error saving data to device"});
+  }
+
+  return res.json({result: `Data with ID: ${writeResult.id} added.`})
+});

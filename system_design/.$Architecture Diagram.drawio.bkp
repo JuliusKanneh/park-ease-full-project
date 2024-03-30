@@ -1,0 +1,100 @@
+<mxfile host="Electron" modified="2024-01-23T11:07:44.849Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.21 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="tGVhcGLCSVL6y76bLSHI" version="22.1.21" type="device">
+  <diagram name="Page-1" id="KQrLEhjpX4wtotiXjMG1">
+    <mxGraphModel dx="1134" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-1" value="External" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="894" y="402" width="388" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-2" value="External APIs" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="929" y="427" width="108" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-3" value="Third-party Services" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1087" y="427" width="160" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-4" value="System" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="20" y="275" width="854" height="211" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-5" value="Smart Parking System" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="405" y="300" width="169" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-6" value="Parking Database" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="427" width="138" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-7" value="Payment Service" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="243" y="427" width="133" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-8" value="Security Module" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="426" y="427" width="129" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-9" value="Reservation Module" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="625" y="300" width="154" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-10" value="User" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="429" y="20" width="324" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-11" value="User" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="572" y="45" width="47" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-12" value="Mobile App" style="rounded=1;absoluteArcSize=1;arcSize=14;whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="549" y="147" width="94" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-13" value="Interacts with" style="curved=1;startArrow=none;endArrow=block;exitX=0.5089207101375499;exitY=0.9901961158303654;entryX=0.4991412061326047;entryY=0.009803996366613051;rounded=0;" edge="1" parent="1" source="z3_tOoWrR-RmwJ83HINm-11" target="z3_tOoWrR-RmwJ83HINm-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-14" value="Sends requests to" style="curved=1;startArrow=none;endArrow=block;exitX=0.04606176952546064;exitY=1.0000001121969784;entryX=0.5034208579881657;entryY=-0.00980377197265625;rounded=0;" edge="1" parent="1" source="z3_tOoWrR-RmwJ83HINm-12" target="z3_tOoWrR-RmwJ83HINm-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="206" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-15" value="Uses data from" style="curved=1;startArrow=none;endArrow=block;exitX=0.002804457083256287;exitY=0.8328641231229212;entryX=0.49826387046039966;entryY=2.2439395680147059e-7;rounded=0;" edge="1" parent="1" source="z3_tOoWrR-RmwJ83HINm-5" target="z3_tOoWrR-RmwJ83HINm-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="124" y="368" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-16" value="Utilizes services from" style="curved=1;startArrow=none;endArrow=block;exitX=0.15102981160108295;exitY=0.9803923438577091;entryX=0.4966713467934974;entryY=2.2439395680147059e-7;rounded=0;" edge="1" parent="1" source="z3_tOoWrR-RmwJ83HINm-5" target="z3_tOoWrR-RmwJ83HINm-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="309" y="368" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-17" value="Interacts with" style="curved=1;startArrow=none;endArrow=block;exitX=0.5034208579881657;exitY=0.9803923438577091;entryX=0.4967296511627907;entryY=2.2439395680147059e-7;rounded=0;" edge="1" parent="1" source="z3_tOoWrR-RmwJ83HINm-5" target="z3_tOoWrR-RmwJ83HINm-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-18" value="Makes reservations through" style="curved=1;startArrow=none;endArrow=block;exitX=0.9522206427397488;exitY=1.0000001121969784;entryX=0.49844429709694604;entryY=-0.00980377197265625;rounded=0;" edge="1" parent="1" source="z3_tOoWrR-RmwJ83HINm-12" target="z3_tOoWrR-RmwJ83HINm-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="702" y="206" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-19" value="Communicates with" style="curved=1;startArrow=none;endArrow=block;exitX=0.7769609208006425;exitY=0.9803923438577091;entryX=-0.0023146028871889467;entryY=0.30619379572669075;rounded=0;" edge="1" parent="1" source="z3_tOoWrR-RmwJ83HINm-5" target="z3_tOoWrR-RmwJ83HINm-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="631" y="368" />
+              <mxPoint x="631" y="402" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z3_tOoWrR-RmwJ83HINm-20" value="Uses services from" style="curved=1;startArrow=none;endArrow=block;exitX=1.004037258893075;exitY=0.9134813568396981;entryX=-0.0005695343017578125;entryY=0.235438146465252;rounded=0;" edge="1" parent="1" source="z3_tOoWrR-RmwJ83HINm-5" target="z3_tOoWrR-RmwJ83HINm-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="787" y="368" />
+              <mxPoint x="787" y="402" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

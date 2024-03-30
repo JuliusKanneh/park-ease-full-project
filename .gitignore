@@ -1,0 +1,16 @@
+# Ignore firebase_project_private_key folder
+firebase_project_private_key/
+stripe_server/park-ease-afe56-firebase-adminsdk-v8l08-ea8a2d22ca.json
+
+# Ignore sensitive data files
+*.key
+*.pem
+*.p12
+*.pem
+*.crt
+*.cer
+*.pfx
+*.jks
+*.keystore
+*.env
+*.env.*
